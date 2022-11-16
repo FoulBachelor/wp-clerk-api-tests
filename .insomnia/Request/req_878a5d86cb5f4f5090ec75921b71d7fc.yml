@@ -1,0 +1,36 @@
+_id: req_878a5d86cb5f4f5090ec75921b71d7fc
+type: Request
+parentId: wrk_587e6b71994f4a959fabe9b083839609
+modified: 1668607514076
+created: 1668607259367
+url: "{{ _.domain }}/wp-json/clerk/getconfig"
+name: /getconfig
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {"key": "{{ _.public_key }}",
+    "private_key": "{{ _.private_key }}"}
+parameters:
+  - id: pair_8966b9204d8b4d05a4d3bf21bb9b6970
+    name: page
+    value: "0"
+    description: ""
+  - id: pair_9845fc269bd346f0b1f59603d587ba37
+    name: limit
+    value: "{{ _.limit }}"
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a5badaf2384d41c9aa4f378a5ad90d52
+authentication: {}
+metaSortKey: -1668128815211.8047
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

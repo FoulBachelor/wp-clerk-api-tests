@@ -1,0 +1,36 @@
+_id: req_a1d02269299b4e3884a2e4389922405b
+type: Request
+parentId: wrk_587e6b71994f4a959fabe9b083839609
+modified: 1668608337354
+created: 1668607162861
+url: "{{ _.domain }}/wp-json/clerk/product"
+name: /product
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {"key": "{{ _.public_key }}",
+    "private_key": "{{ _.private_key }}"}
+parameters:
+  - id: pair_8966b9204d8b4d05a4d3bf21bb9b6970
+    name: page
+    value: "0"
+    description: ""
+  - id: pair_9845fc269bd346f0b1f59603d587ba37
+    name: limit
+    value: "{{ _.limit }}"
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a5badaf2384d41c9aa4f378a5ad90d52
+authentication: {}
+metaSortKey: -1668130937843.875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,100 @@
+_id: req_e6f99c39fb3e4ce6870f31b6df9254cd
+type: Request
+parentId: wrk_587e6b71994f4a959fabe9b083839609
+modified: 1668607136764
+created: 1668607019962
+url: "{{ _.domain }}/wp-json/clerk/setconfig"
+name: /setconfig
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {	"key": "{{ _.public_key }}",
+    	"private_key": "{{ _.private_key }}",
+    	"lang": "auto",
+    	"import_url": "https:\/\/wp.stubbe.dev",
+    	"customer_sync_enabled": "1",
+    	"customer_sync_customer_fields": "",
+    	"include_pages": "1",
+    	"page_additional_fields": "test",
+    	"page_additional_types": "mailpoet_page, stubbe",
+    	"outofstock_products": "1",
+    	"collect_emails": "1",
+    	"collect_emails_signup_message": "TEST",
+    	"collect_baskets": "1",
+    	"additional_fields": "test",
+    	"data_sync_image_size": "medium",
+    	"livesearch_enabled": "1",
+    	"livesearch_include_suggestions": "1",
+    	"livesearch_suggestions": "2",
+    	"livesearch_include_categories": "1",
+    	"livesearch_categories": "2",
+    	"livesearch_include_pages": "1",
+    	"livesearch_pages": "1",
+    	"livesearch_pages_type": "post",
+    	"livesearch_dropdown_position": "Left",
+    	"livesearch_field_selector": ".search-field",
+    	"livesearch_form_selector": ".woocommerce-product-search",
+    	"livesearch_template": "livesearch",
+    	"search_enabled": "1",
+    	"search_page": "163",
+    	"search_include_categories": "1",
+    	"search_categories": "2",
+    	"search_include_pages": "1",
+    	"search_pages": "1",
+    	"search_pages_type": "All",
+    	"search_template": "search-page",
+    	"search_no_results_text": "Ingen resultater",
+    	"search_load_more_button": "Visa meree",
+    	"faceted_navigation_enabled": "1",
+    	"faceted_navigation": "[{\"attribute\":\"price\",\"title\":\"Price\",\"position\":\"2\",\"checked\":true},{\"attribute\":\"on_sale\",\"title\":\"On Sale\",\"position\":\"3\",\"checked\":true},{\"attribute\":\"stock\",\"title\":\"Stock HEHEH\",\"position\":\"5\",\"checked\":true},{\"attribute\":\"variant_stocks\",\"title\":\"Title 1\",\"position\":\"6\",\"checked\":false},{\"attribute\":\"all_images\",\"title\":\"\",\"position\":\"1\",\"checked\":false},{\"attribute\":\"backorders\",\"title\":\"\",\"position\":\"2\",\"checked\":false},{\"attribute\":\"categories\",\"title\":\"\",\"position\":\"3\",\"checked\":false},{\"attribute\":\"created_at\",\"title\":\"\",\"position\":\"4\",\"checked\":false},{\"attribute\":\"current_url\",\"title\":\"\",\"position\":\"5\",\"checked\":false},{\"attribute\":\"managing_stock\",\"title\":\"\",\"position\":\"6\",\"checked\":false},{\"attribute\":\"obj\",\"title\":\"\",\"position\":\"7\",\"checked\":false},{\"attribute\":\"stock_status\",\"title\":\"Stock Status\",\"position\":\"8\",\"checked\":true},{\"attribute\":\"variant_ids\",\"title\":\"\",\"position\":\"1\",\"checked\":false},{\"attribute\":\"variant_images\",\"title\":\"\",\"position\":\"2\",\"checked\":false},{\"attribute\":\"variant_list_prices\",\"title\":\"\",\"position\":\"3\",\"checked\":false},{\"attribute\":\"variant_options\",\"title\":\"\",\"position\":\"4\",\"checked\":false},{\"attribute\":\"variant_prices\",\"title\":\"\",\"position\":\"5\",\"checked\":false},{\"attribute\":\"variant_skus\",\"title\":\"\",\"position\":\"6\",\"checked\":false},{\"attribute\":\"status\",\"title\":\"\",\"position\":\"1\",\"checked\":false},{\"attribute\":\"message\",\"title\":\"\",\"position\":\"2\",\"checked\":false}]",
+    	"faceted_navigation_design": "161452",
+    	"powerstep_enabled": "1",
+    	"powerstep_type": "popup",
+    	"powerstep_page": "156",
+    	"powerstep_templates": "power-step-others-also-bought,power-step-visitor-complementary,power-step-popular,power-step-popular-on-sale",
+    	"powerstep_excl_duplicates": "1",
+    	"exit_intent_enabled": "1",
+    	"exit_intent_template": "exit_intent,test",
+    	"category_enabled": "1",
+    	"category_content": "category-page-popular,product-page-others-also-bought",
+    	"clerk_category_shortcode": "[clerk_category_id]",
+    	"product_enabled": "1",
+    	"product_content": "1234",
+    	"product_excl_duplicates": "1",
+    	"clerk_product_shortcode": "[clerk_product_id]",
+    	"cart_enabled": "1",
+    	"cart_content": "cart-others-also-bought,test",
+    	"clerk_cart_shortcode": "[clerk_cart_ids]",
+    	"clerk_additional_scripts_content": "let noise = Math.random();\r\nlet skewDeg = 50*noise;\r\nlet skewDeg2 = 25*(noise*Math.random());\r\nlet scaleRatio = (Math.random()\/10)+0.7;\r\nlet interval = 1000;\r\ndocument.body.style.transition = 'all 0.2s ease-in-out';\r\nsetInterval(function(){\r\n\tnoise = Math.random();\r\n\tskewDeg = 5*noise;\r\n\tskewDeg2 = 5*(noise*Math.random());\r\n\tscaleRatio = (Math.random()\/10)+1;\r\n\tdocument.body.style.transform = `skew(${skewDeg}deg, ${skewDeg2}deg) scale(${scaleRatio})`;\r\n\t\/\/document.body.style.transform = `scale(${scaleRatio})`;\r\n}, interval*noise);\t\t\t\t\t\t\t\t",
+    	"log_enabled": "1",
+    	"log_level": "Error + Warn + Debug Mode",
+    	"log_to": "my.clerk.io",
+    	"realtime_updates": "0",
+    	"disable_order_synchronization": "0",
+    	"category_excl_duplicates": "0",
+    	"cart_excl_duplicates": "0"
+    }
+parameters:
+  - id: pair_8966b9204d8b4d05a4d3bf21bb9b6970
+    name: page
+    value: "0"
+    description: ""
+  - id: pair_9845fc269bd346f0b1f59603d587ba37
+    name: limit
+    value: "{{ _.limit }}"
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a5badaf2384d41c9aa4f378a5ad90d52
+authentication: {}
+metaSortKey: -1668128768042.2031
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

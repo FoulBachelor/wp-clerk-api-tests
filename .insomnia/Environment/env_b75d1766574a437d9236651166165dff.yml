@@ -1,0 +1,20 @@
+_id: env_b75d1766574a437d9236651166165dff
+type: Environment
+parentId: env_8d3147bbdcba41018698d57e9fefba8f
+modified: 1668606543732
+created: 1668605762798
+name: WORDPRESS STANDARDS TESTS
+data:
+  public_key: 8F2fWKTvvpURQyqMGscMIk1wO2LEAu4C
+  private_key: v1e07EXbmbG8MnVZZScqRR4tjIqRWUJSYpdN9ZafCw
+  domain: https://wp.stubbe.dev
+  limit: 100
+dataPropertyOrder:
+  "&":
+    - public_key
+    - private_key
+    - domain
+    - limit
+color: "#9d09d3"
+isPrivate: false
+metaSortKey: 1668605762798
